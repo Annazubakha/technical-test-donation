@@ -1,8 +1,8 @@
-import Img1 from "../../assets/images/direct-debit-1-logo-png-transparent.png";
-import Img2 from "../../assets/images/fundraising-regulator-logo.png";
-import Img3 from "../../assets/images/visa-logo.png";
-import Img4 from "../../assets/images/mastercard-logo.png";
-import Img5 from "../../assets/images/paypal-logo.png";
+import Img1 from "/assets/images/direct-debit-1-logo-png-transparent.png";
+import Img2 from "/assets/images/fundraising-regulator-logo.png";
+import Img3 from "/assets/images/visa-logo.png";
+import Img4 from "/assets/images/mastercard-logo.png";
+import Img5 from "/assets/images/paypal-logo.png";
 
 import s from "./Foooter.module.css";
 

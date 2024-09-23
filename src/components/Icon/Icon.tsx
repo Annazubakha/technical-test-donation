@@ -1,4 +1,4 @@
-import Icons from "../../assets/icons/sprite.svg";
+import Icons from "/assets/icons/sprite.svg";
 
 interface IconProps {
   id: string;
@@ -13,8 +13,7 @@ export const Icon: React.FC<IconProps> = ({
 }): JSX.Element => {
   return (
     <svg className={className} height={size} width={size}>
-      {/* <use href={Icons + "#icon-" + id}></use> */}
-      <use href={`${Icons}#icon-${id}`}></use>
+      <use href={Icons + "#icon-" + id}></use>
     </svg>
   );
 };
