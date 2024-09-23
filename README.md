@@ -2,7 +2,7 @@
 
 <h2>The implementation  of Technical Test.</h2>
 
- <h1>What was done:</h1>
+ <h1>What were done:</h1>
 
  <ul><li>Layout for 375px and 1280px breakpoints.</li>
 <li>Ability to switch between tabs.</li>
