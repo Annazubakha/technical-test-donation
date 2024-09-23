@@ -1,0 +1,74 @@
+:root {
+  --my-orange: #face9d;
+  --my-orange-dark: #f49223;
+  --my-white: #ffffff;
+  --my-blue: #103472;
+  --gris-bg: #eaedf4;
+  --text-color: #23232b;
+  --text-color-second: #4d5057;
+
+}
+
+/* Reset styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 300ms ease-out;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  transition: background-color 300ms ease-out;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color)
+}
+
+/* Container */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 335px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1080px;
+  }
+}

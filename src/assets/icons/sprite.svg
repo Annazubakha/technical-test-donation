@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-lock" viewBox="0 0 20 20">
+      <path
+        d="M15.8 8h-1.8v-2.4c0-2.897-1.335-4.6-4-4.6s-4 1.703-4 4.6v2.4h-2c-0.553 0-1 0.646-1 1.199v7.801c0 0.549 0.428 1.139 0.951 1.307l1.197 0.387c0.524 0.167 1.402 0.306 1.952 0.306h5.8c0.549 0 1.428-0.139 1.951-0.307l1.196-0.387c0.524-0.167 0.953-0.757 0.953-1.306v-7.801c0-0.553-0.648-1.199-1.2-1.199zM12 8h-4v-2.801c0-1.445 0.797-2.199 2-2.199s2 0.754 2 2.199v2.801z">
+      </path>
+    </symbol>
+    <symbol id="icon-pound" viewBox="0 0 256 256">
+      <defs>
+      </defs>
+      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+        <path
+          d="M 34.801 78.271 c 5.587 -7.722 6.832 -17.481 7.039 -27.414 h 17.315 v -11.73 H 41.498 c -0.257 -12.869 2.023 -21.502 6.713 -25.123 c 4.03 -3.113 10.752 -3.061 19.976 0.163 l 3.868 -11.072 C 58.854 -1.519 48.419 -0.971 41.044 4.719 c -7.872 6.077 -11.587 17.374 -11.284 34.408 H 17.136 v 11.73 h 12.963 c -0.342 14.225 -2.923 22.356 -13.2 27.019 V 90 h 56.203 V 78.271 H 34.801 z"
+          style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+          transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+      </g>
+    </symbol>
+  </defs>
+</svg>
