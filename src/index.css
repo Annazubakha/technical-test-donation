@@ -6,7 +6,9 @@
   --gris-bg: #eaedf4;
   --text-color: #23232b;
   --text-color-second: #4d5057;
-
+  --border-color: #b9b9b9;
+  --my-red: red;
+  --my-green: #329b9f
 }
 
 /* Reset styles */
@@ -40,6 +42,7 @@ button {
   border: none;
   outline: none;
   transition: background-color 300ms ease-out;
+  background-color: transparent;
 }
 
 input {
@@ -53,15 +56,18 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: var(--text-color)
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Container */
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 335px;
+  width: 355px;
   margin: 0 auto;
 }
 
@@ -71,4 +77,13 @@ body {
     padding-right: 100px;
     max-width: 1080px;
   }
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+  appearance: none;
 }

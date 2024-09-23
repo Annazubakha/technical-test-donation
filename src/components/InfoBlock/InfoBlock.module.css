@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.info_description {
+    background-color: var(--my-orange);
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+}
+
+.montly_desc {
+    padding: 20px 10px;
+}
+
+.once_desc {
+    padding: 20px 30px;
+}
+
+.info_description:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid var(--my-orange);
+
+}

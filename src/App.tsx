@@ -1,7 +1,9 @@
-export const App = () => {
+import { DonationBlock } from "./components";
+
+export const App = (): JSX.Element => {
   return (
-    <>
-      <p>Start</p>
-    </>
+    <section className="container">
+      <DonationBlock />
+    </section>
   );
 };

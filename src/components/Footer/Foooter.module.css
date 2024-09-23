@@ -1,0 +1,52 @@
+.footer {
+    background-color: var(--gris-bg);
+    padding: 20px;
+}
+
+.monthly_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.logo_list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.description {
+    color: var(--text-color-second);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn_other_tab {
+    font-weight: 700;
+    position: relative;
+    transition: color 300ms ease-out;
+}
+
+.btn_other_tab:hover,
+.btn_other_tab:focus {
+    color: var(--text-color-second)
+}
+
+.btn_other_tab:after {
+    width: 100%;
+    height: 1.5px;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    background-color: currentColor;
+    transition: background-color 300ms ease-out;
+}
+
+.btn_other_tab:hover+.btn_other_tab:after,
+.btn_other_tab:focus+.btn_other_tab:after {
+    background-color: var(--text-color-second)
+}

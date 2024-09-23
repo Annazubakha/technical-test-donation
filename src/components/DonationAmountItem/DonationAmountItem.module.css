@@ -1,0 +1,51 @@
+.item {
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--gris-bg);
+    border: 1px solid var(--text-color-second);
+    cursor: pointer;
+    transition: background-color 300ms ease-out, color 300ms ease-out;
+}
+
+.item>label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover,
+.item:focus {
+    background-color: var(--my-green);
+    color: var(--my-white)
+}
+
+
+.checked {
+    background-color: var(--my-green);
+    color: var(--my-white);
+}
+
+
+.icon_wrapper {
+    background-color: var(--my-white);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.icon_check {
+    fill: var(--my-green);
+}
+
+.checkbox_hidden {
+    display: none;
+}
