@@ -73,9 +73,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
-    padding-left: 100px;
-    padding-right: 100px;
-    max-width: 1080px;
+    width: 1080px;
   }
 }
 

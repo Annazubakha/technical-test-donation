@@ -71,31 +71,33 @@ export const DonationForm: React.FC<FormProps> = ({
         I would like to make a {tab === "monthly" ? "monthly" : "one-off"}{" "}
         donation of
       </h1>
-      <DonationAmountList
-        tab={tab}
-        setAmount={handleCheckboxChange}
-        setIsChecked={setIsChecked}
-        amount={amount}
-        register={register}
-      />
-      <div className={s.input_wrapper}>
-        <label>
-          <input
-            type="number"
-            className={s.user_amount}
-            placeholder="Other amount"
-            {...register("amount")}
-            onChange={handleInputChange}
-          />
-        </label>
-        <span className={s.icon}>&pound; </span>
-        <p className={s.input_error}>{errors.amount?.message}</p>
+      <div className={s.inside_wrapper}>
+        <DonationAmountList
+          tab={tab}
+          setAmount={handleCheckboxChange}
+          setIsChecked={setIsChecked}
+          amount={amount}
+          register={register}
+        />
+        <div className={s.input_wrapper}>
+          <label>
+            <input
+              type="number"
+              className={s.user_amount}
+              placeholder="Other amount"
+              {...register("amount")}
+              onChange={handleInputChange}
+            />
+          </label>
+          <span className={s.icon}>&pound; </span>
+          <p className={s.input_error}>{errors.amount?.message}</p>
+        </div>
+        <button type="submit" className={s.btn_submit}>
+          Donate &pound;
+          {amount ? amount : 0} {tab === "monthly" ? "monthly" : "today"}{" "}
+          <Icon id="lock" size={18} />{" "}
+        </button>
       </div>
-      <button type="submit" className={s.btn_submit}>
-        Donate &pound;
-        {amount ? amount : 0} {tab === "monthly" ? "monthly" : "today"}{" "}
-        <Icon id="lock" size={18} />{" "}
-      </button>
     </form>
   );
 };

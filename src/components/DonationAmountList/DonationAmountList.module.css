@@ -4,3 +4,9 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
+@media screen and (min-width: 1280px) {
+    .list {
+        margin-bottom: 0;
+    }
+}

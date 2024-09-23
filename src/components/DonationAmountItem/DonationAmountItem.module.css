@@ -9,6 +9,13 @@
     transition: background-color 300ms ease-out, color 300ms ease-out;
 }
 
+
+@media screen and (min-width: 1280px) {
+    .item {
+        width: 130px;
+    }
+}
+
 .item>label {
     width: 100%;
     height: 100%;
@@ -17,16 +24,20 @@
     align-items: center;
 }
 
+
+
 .item:hover,
 .item:focus {
     background-color: var(--my-green);
-    color: var(--my-white)
+    color: var(--my-white);
+    border: 1px solid var(--my-green);
 }
 
 
 .checked {
     background-color: var(--my-green);
     color: var(--my-white);
+    border: 1px solid var(--my-green);
 }
 
 

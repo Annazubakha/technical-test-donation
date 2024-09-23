@@ -15,9 +15,25 @@ export const InfoBlock: React.FC<Props> = ({ amount, tab }): JSX.Element => {
       >
         &pound;
         {amount ? amount : 0}{" "}
-        {tab === "monthly"
-          ? "Could help answer an emergency call to our Animal Rescue more text if your need it."
-          : "Could help an Animal Rescue Team take on an urgent animal rescue more text if your need it."}
+        {tab === "monthly" ? (
+          <>
+            {" "}
+            Could help answer an emergency call to our Animal Rescue{" "}
+            <span className={s.additional_descr1}>Line</span>
+            <span className={s.additional_descr}>
+              {" "}
+              more text if your need it.
+            </span>{" "}
+          </>
+        ) : (
+          <>
+            Could help an Animal Rescue Team take on an urgent animal rescue{" "}
+            <span className={s.additional_descr}>
+              {" "}
+              more text if your need it.
+            </span>
+          </>
+        )}
       </p>
     </div>
   );

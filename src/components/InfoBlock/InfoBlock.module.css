@@ -10,12 +10,26 @@
     position: relative;
 }
 
+@media screen and (min-width: 1280px) {
+    .info_description {
+        text-align: left;
+    }
+}
+
 .montly_desc {
     padding: 20px 10px;
 }
 
 .once_desc {
     padding: 20px 30px;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .montly_desc,
+    .once_desc {
+        padding: 20px 20px;
+    }
 }
 
 .info_description:before {
@@ -28,4 +42,23 @@
     border-right: 8px solid transparent;
     border-bottom: 10px solid var(--my-orange);
 
+}
+
+@media screen and (min-width: 1280px) {
+    .info_description:before {
+        top: -10px;
+        left: 87%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .additional_descr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1279.99px) {
+    .additional_descr1 {
+        display: none;
+    }
 }

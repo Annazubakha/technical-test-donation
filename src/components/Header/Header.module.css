@@ -5,6 +5,14 @@
     z-index: 1000;
 }
 
+@media screen and (min-width:1280px) {
+    .header {
+        gap: 10px;
+        justify-content: start;
+
+    }
+}
+
 .tab {
     width: 175px;
     height: 50px;

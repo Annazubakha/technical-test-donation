@@ -16,18 +16,21 @@ export const Footer: React.FC<FooterProps> = ({ tab, setTab }): JSX.Element => {
     <footer className={s.footer}>
       {tab === "monthly" ? (
         <div className={s.monthly_wrapper}>
-          <ul className={s.logo_list}>
-            <li>
-              <img src={Img1} alt="Logo" />
-            </li>
-            <li>
-              <img src={Img2} alt="Logo" />
-            </li>
-          </ul>
-          <p className={s.description}>
-            All Direct Debits are protected by the
-            <br /> Direct Debit Guarantee.
-          </p>
+          <div className={s.inside_wrapper}>
+            {" "}
+            <ul className={s.logo_list}>
+              <li>
+                <img src={Img1} alt="Logo" />
+              </li>
+              <li>
+                <img src={Img2} alt="Logo" />
+              </li>
+            </ul>
+            <p className={s.description}>
+              All Direct Debits are protected by the
+              <br className={s.br} /> Direct Debit Guarantee.
+            </p>
+          </div>
           <button
             type="button"
             className={s.btn_other_tab}

@@ -3,6 +3,7 @@
     padding: 20px;
 }
 
+
 .monthly_wrapper {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,28 @@
     align-items: center;
     text-align: center;
 }
+
+@media screen and (min-width: 1280px) {
+    .monthly_wrapper {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.inside_wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .inside_wrapper {
+        flex-direction: row-reverse;
+    }
+}
+
 
 .logo_list {
     display: flex;
@@ -22,6 +45,12 @@
     color: var(--text-color-second);
     font-weight: 500;
     font-size: 14px;
+}
+
+@media screen and (min-width: 1280px) {
+    .br {
+        display: none;
+    }
 }
 
 .btn_other_tab {
