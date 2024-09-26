@@ -53,6 +53,11 @@ export const DonationForm: React.FC<FormProps> = ({
     setValue,
     reset,
   } = useForm<Inputs>({ resolver: yupResolver(schema) });
+  useEffect(() => {
+    if (tab) {
+      reset();
+    }
+  }, [reset, tab]);
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const onSubmit: SubmitHandler<Inputs> = async (data): Promise<void> => {
     console.log(data);
